@@ -90,22 +90,22 @@ class MainTests {
         val expectedJsonString =
             """
 {
-  "uc": "PA",
-  "ects": 6.0,
-  "inscritos": [
-      {
-        "numero": 101101,
-        "nome": "Dave Farley"
-      },
-      {
-        "numero": 101102,
-        "nome": "Martin Fowler"
-      },
-      {
-        "numero": 26503,
-        "nome": "André Santos"
-      }
-   ]
+    "uc": "PA",
+    "ects": 6.0,
+    "inscritos": [
+        {
+            "numero": 101101,
+            "nome": "Dave Farley"
+        },
+        {
+            "numero": 101102,
+            "nome": "Martin Fowler"
+        },
+        {
+            "numero": 26503,
+            "nome": "André Santos"
+        }
+    ]
 }
              """.trimIndent()
         assertEquals(expectedJsonString, jsonString)

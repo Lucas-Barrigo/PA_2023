@@ -56,12 +56,12 @@ fun main() {
     val propertyValue = JSONNumber(101102)
     val matchingObjects = getObject2().search(propertyName, propertyValue)
     for (matchingObject in matchingObjects) {
-        //println(matchingObject.toJsonString())
+        println(matchingObject.toJsonString())
     }
 
     val student = Student(123, 12345, "John Doe", StudentType.Bachelor)
     val json2 = JSONObject().mapObject(student)
-    //println(json2.toJsonString())
+    println(json2.toJsonString())
 }
 
 abstract class JSONValue {
