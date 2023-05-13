@@ -8,3 +8,5 @@ Manipulate JSONObject
 - Automatically identifies the type of the porperty
 - Search for properties
 - Map a class XPTO to JSONObject
+- Explicação das anotações
+- diagrama de classes
