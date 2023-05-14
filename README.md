@@ -1,6 +1,8 @@
 # Library JsonObject
 Manipulate JSONObject 
 
+# How Execute the project
+    To execute the project just need gradle to  build and Run the HelpersFinal.kt file. 
 # Functionalities
   ## Add properties
     Add a new property to the Json
