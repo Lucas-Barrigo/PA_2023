@@ -6,15 +6,22 @@ Convert classes to json and manipulate JSONObject's.
 # Functionalities
   ## Add properties
     Add a new property to the Json
+        addProperty("uc", JSONString("PA"))
   ## Remove properties
     Remove a property from the Json
+        val el: Pair<String, JSONValue> = jsonObject.get()[0]
+        jsonObject.remove(el)
   ## Update properties
     Update the value of a property
+        update("uc", "DB")
   ## Automatically identifies the type of the porperty
+     
   ## Search for properties
     Search and return the Objects with the value that was searched.
+        search(propertyName, propertyValue)
   ## Map a class XPTO to JSONObject
-
+        Will map a class to Json  
+            mapObject(o: Any): JSONValue
 # Explicação das anotações
   ## Exclude
     Will exclude the object below
