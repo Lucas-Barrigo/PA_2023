@@ -1,9 +1,7 @@
 package jsonlibrary
 
 import java.awt.Component
-import java.awt.Dimension
 import java.awt.GridLayout
-import java.awt.Toolkit
 import java.awt.event.*
 import javax.swing.*
 
