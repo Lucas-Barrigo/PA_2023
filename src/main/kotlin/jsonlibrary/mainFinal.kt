@@ -77,7 +77,10 @@ abstract class JSONValue {
         return results
     }
 
-    abstract fun mapObject(o: Any): JSONValue
+    open fun mapObject(o: Any): JSONValue{
+
+        return TODO("Provide the return value")
+    }
 }
 
 class JSONObject : JSONValue() {
@@ -236,9 +239,7 @@ class JSONNull : JSONValue() {
         return "${addIndentation(indent)}null"
     }
 
-    override fun mapObject(o: Any): JSONValue {
-        TODO("Not yet implemented")
-    }
+
 }
 
 class JSONBoolean(val value: Boolean) : JSONValue() {
@@ -246,9 +247,7 @@ class JSONBoolean(val value: Boolean) : JSONValue() {
         return "${addIndentation(indent)}$value"
     }
 
-    override fun mapObject(o: Any): JSONValue {
-        TODO("Not yet implemented")
-    }
+
 }
 
 
@@ -257,9 +256,7 @@ class JSONString(val value: String) : JSONValue() {
         return "${addIndentation(indent)}\"$value\""
     }
 
-    override fun mapObject(o: Any): JSONValue {
-        TODO("Not yet implemented")
-    }
+
 }
 
 class JSONNumber(val value: Number) : JSONValue() {
@@ -267,9 +264,7 @@ class JSONNumber(val value: Number) : JSONValue() {
         return "${addIndentation(indent)}$value"
     }
 
-    override fun mapObject(o: Any): JSONValue {
-        TODO("Not yet implemented")
-    }
+
 }
 
 class JSONDouble(private val value: Double) : JSONValue() {
@@ -277,9 +272,7 @@ class JSONDouble(private val value: Double) : JSONValue() {
         return value.toString()
     }
 
-    override fun mapObject(o: Any): JSONValue {
-        TODO("Not yet implemented")
-    }
+
 }
 
 private fun addIndentation(indent: Int): String {
