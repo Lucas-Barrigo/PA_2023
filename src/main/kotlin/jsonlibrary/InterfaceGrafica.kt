@@ -9,6 +9,7 @@ fun main() {
     val x = Editor().open()
 }
 
+
 class Editor {
 
     private var theMainObject: JSONObject = getObject2()
