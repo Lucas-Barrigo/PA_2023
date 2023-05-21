@@ -15,7 +15,8 @@ Convert classes to json and manipulate JSONObject's.
     Update the value of a property
         update("uc", "DB")
   ## Automatically identifies the type of the porperty
-     
+     Automatic detect the type os the property 
+        val json = JSONObject().mapObject(student)
   ## Search for properties
     Search and return the Objects with the value that was searched.
         search(propertyName, propertyValue)
@@ -40,3 +41,6 @@ Convert classes to json and manipulate JSONObject's.
   ## testValidateJSONStructure
     Will validade the Json structure
 # diagrama de classes
+![image](https://github.com/Lucas-Barrigo/PA_2023/assets/81224139/d55d5d7c-5727-436f-b945-52dbbfbf19ab)
+
+
