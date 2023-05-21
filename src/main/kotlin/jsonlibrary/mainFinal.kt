@@ -179,6 +179,7 @@ class JSONObject : JSONValue() {
 
                 val jsonValue = when (val value = field.getter.call(o)) {
                     is String -> JSONString(value)
+                    is Double -> if (forceString) JSONString(value.toString()) else JSONDouble(value)
                     is Number -> if (forceString) JSONString(value.toString()) else JSONNumber(value)
                     is Boolean -> if (forceString) JSONString(value.toString()) else JSONBoolean(value)
                     is Enum<*> -> JSONString(value.name)
